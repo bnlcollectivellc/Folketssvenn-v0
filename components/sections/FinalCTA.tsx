@@ -34,7 +34,7 @@ export function FinalCTA({ translations: t, onCtaClick, ctaLabels }: FinalCTAPro
         <ScrollAnimate delay={200}>
           <a
             href={`tel:${t.phone}`}
-            className="inline-flex items-center gap-3 text-h3 font-heading text-secondary hover:text-secondary-hover transition-colors mb-12"
+            className="inline-flex items-center gap-3 text-h3 font-heading text-primary md:hover:text-white md:hover:scale-[1.015] hover-effect-item transition-all duration-200 mb-12"
           >
             <svg
               className="w-8 h-8"

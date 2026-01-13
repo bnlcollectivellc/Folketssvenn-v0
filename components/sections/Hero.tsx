@@ -69,7 +69,7 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
         {/* Phone number */}
         <a
           href="tel:0737762818"
-          className="mt-6 text-body-lg text-cream/80 hover:text-cream transition-colors animate-hero-buttons"
+          className="mt-6 text-body-lg text-primary md:hover:text-white md:hover:scale-[1.015] hover-effect-item transition-all duration-200 animate-hero-buttons"
         >
           0737762818
         </a>

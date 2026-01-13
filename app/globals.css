@@ -253,4 +253,9 @@ html:focus-within {
     transform: scale(1.015);
     box-shadow: 0 10px 15px rgba(44, 44, 44, 0.1), 0 4px 6px rgba(44, 44, 44, 0.05);
   }
+
+  /* Phone links turn white when centered on mobile */
+  a.hover-effect-item.mobile-centered {
+    color: white;
+  }
 }
