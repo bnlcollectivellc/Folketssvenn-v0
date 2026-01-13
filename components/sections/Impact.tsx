@@ -26,7 +26,7 @@ export function Impact({ translations: t }: ImpactProps) {
         <div className="flex flex-col md:flex-row items-center md:grid md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
           {stats.map((stat, index) => (
             <ScrollAnimate key={index} delay={index * 100}>
-              <div className="text-center px-8 py-4 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm w-fit md:w-full transition-all duration-200 hover:scale-[1.03] hover:shadow-lg">
+              <div className="text-center px-8 py-4 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm w-fit md:w-full transition-all duration-200 hover:scale-[1.015] hover:shadow-lg">
                 <div className="text-h2 md:text-[4.5rem] font-heading text-primary leading-none">
                   {stat.value}
                 </div>
@@ -55,7 +55,7 @@ export function Impact({ translations: t }: ImpactProps) {
 
           {/* Image */}
           <ScrollAnimate direction="right">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg transition-all duration-200 hover:scale-[1.03] hover:shadow-xl">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg transition-all duration-200 hover:scale-[1.015] hover:shadow-xl">
               <Image
                 src="/images/warehouse.jpg"
                 alt="Food rescue warehouse"
