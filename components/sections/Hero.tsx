@@ -35,12 +35,12 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
       {/* Hero Content */}
       <div className="relative z-10 flex-1 flex flex-col justify-center items-center text-center px-6 pb-20">
         {/* Headline - fades in after background */}
-        <h1 className="font-heading text-display md:text-[5rem] text-cream mb-2 animate-hero-headline">
+        <h1 className="font-heading text-h1 md:text-[5rem] text-cream mb-2 animate-hero-headline">
           {t.hero.headline}
         </h1>
 
         {/* Tagline - reduced 25% from h2/h1 to h3/h2 */}
-        <p className="text-h3 md:text-h2 text-cream/90 font-body mb-12 animate-hero-tagline">
+        <p className="text-body-lg md:text-h2 text-cream/90 font-body mb-12 animate-hero-tagline">
           {t.hero.tagline}
         </p>
 
