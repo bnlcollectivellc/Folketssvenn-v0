@@ -16,7 +16,7 @@ export function Origin({ translations: t }: OriginProps) {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start md:items-center">
           {/* Image - overlaps evenly above and below section */}
           <ScrollAnimate direction="left" className="order-2 md:order-1 -mt-[46px] md:-mt-[78px] mb-8 md:-mb-[78px] relative z-20">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl transition-all duration-200 hover:scale-[1.03] hover:shadow-2xl">
               <Image
                 src="/images/origin.jpg"
                 alt="The beginning of Folketssvenn"
