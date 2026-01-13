@@ -28,7 +28,7 @@ export function Origin({ translations: t }: OriginProps) {
           </ScrollAnimate>
 
           {/* Content */}
-          <div className="order-1 md:order-2 pt-12 md:pt-16 pb-24 md:pb-32">
+          <div className="order-1 md:order-2 pt-12 md:pt-16 pb-section-md md:pb-section-lg">
             <ScrollAnimate>
               <h2 className="text-h2 md:text-h1 font-heading text-charcoal mb-6">
                 {t.title}

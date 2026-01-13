@@ -19,15 +19,15 @@ export function Impact({ translations: t }: ImpactProps) {
     <ParallaxSection
       backgroundImage="/images/warehouse.jpg"
       overlayColor="rgba(247, 243, 237, 0.92)"
-      className="pt-0 pb-section-md md:pb-section-lg"
+      className="py-section-md md:py-section-lg"
     >
       <div className="max-w-wide mx-auto px-6 md:px-12">
-        {/* Stats Strip - overlaps into previous section */}
-        <div className="grid grid-cols-3 gap-3 md:gap-6 -mt-16 md:-mt-20 mb-12 md:mb-16">
+        {/* Stats Strip */}
+        <div className="grid grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
           {stats.map((stat, index) => (
             <ScrollAnimate key={index} delay={index * 100}>
-              <div className="text-center p-4 md:p-8 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg">
-                <div className="text-h1 md:text-display font-heading text-primary leading-none">
+              <div className="text-center p-6 md:p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm">
+                <div className="text-display md:text-[4.5rem] font-heading text-primary leading-none">
                   {stat.value}
                 </div>
                 <div className="text-small md:text-body text-charcoal-secondary mt-2">
