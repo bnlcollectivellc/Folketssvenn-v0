@@ -15,7 +15,7 @@ export function Origin({ translations: t }: OriginProps) {
       <div className="max-w-wide mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           {/* Image - overlaps into hero section */}
-          <ScrollAnimate direction="left" className="order-2 md:order-1 -mt-[71px] md:-mt-[103px]">
+          <ScrollAnimate direction="left" className="order-2 md:order-1 -mt-[46px] md:-mt-[78px]">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/images/origin.jpg"
