@@ -16,7 +16,7 @@ interface FinalCTAProps {
 
 export function FinalCTA({ translations: t, onCtaClick, ctaLabels }: FinalCTAProps) {
   return (
-    <section className="py-section-md md:py-section-lg bg-charcoal text-cream">
+    <section className="pt-12 md:pt-16 pb-section-md md:pb-section-lg bg-charcoal text-cream">
       <div className="max-w-wide mx-auto px-6 md:px-12 text-center">
         <ScrollAnimate>
           <h2 className="text-h2 md:text-h1 font-heading mb-6">
