@@ -22,7 +22,7 @@ export function Partners({ translations: t }: PartnersProps) {
   return (
     <>
       {/* Partners content section */}
-      <section className="pt-[38px] md:pt-[54px] pb-12 md:pb-16 bg-cream">
+      <section className="pt-[42px] md:pt-[59px] pb-[53px] md:pb-[70px] bg-cream">
         <div className="max-w-wide mx-auto px-6 md:px-12">
           <ScrollAnimate>
             <h2 className="text-h2 md:text-h1 font-heading text-charcoal text-center mb-6">
