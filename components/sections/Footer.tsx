@@ -9,7 +9,7 @@ interface FooterProps {
 
 export function Footer({ translations: t }: FooterProps) {
   return (
-    <footer className="py-12 bg-cream-muted border-t border-border">
+    <footer className="py-6 bg-cream-muted border-t border-border">
       <div className="max-w-wide mx-auto px-6 md:px-12">
         <ScrollAnimate>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
