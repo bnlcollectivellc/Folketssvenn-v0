@@ -32,8 +32,8 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
         />
       </nav>
 
-      {/* Hero Content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center items-center text-center px-6 pb-20">
+      {/* Hero Content - raised by 10% with adjusted bottom padding */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center items-center text-center px-6 pb-[15%]">
         {/* Headline - fades in after background */}
         <h1 className="font-heading text-h1 md:text-[5rem] text-cream mb-2 animate-hero-headline">
           {t.hero.headline}
@@ -65,6 +65,14 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
             {t.hero.cta3}
           </Button>
         </div>
+
+        {/* Phone number */}
+        <a
+          href="tel:0737762818"
+          className="mt-6 text-body-lg text-cream/80 hover:text-cream transition-colors animate-hero-buttons"
+        >
+          0737762818
+        </a>
       </div>
 
       {/* Scroll indicator */}
