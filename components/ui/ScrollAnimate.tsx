@@ -1,6 +1,6 @@
 'use client'
 
-import { useScrollAnimation, useParallax } from '@/lib/useScrollAnimation'
+import { useScrollAnimation, useParallax, useScrollCenter } from '@/lib/useScrollAnimation'
 import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
 
@@ -42,6 +42,32 @@ interface ParallaxSectionProps {
   overlayColor?: string
   overlayOpacity?: number
   className?: string
+}
+
+interface HoverEffectProps {
+  children: ReactNode
+  className?: string
+}
+
+export function HoverEffect({
+  children,
+  className,
+}: HoverEffectProps) {
+  const { ref, isCentered } = useScrollCenter<HTMLDivElement>()
+
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        'transition-all duration-200 hover-effect-item',
+        // Mobile: add centered class when in center of viewport
+        isCentered && 'mobile-centered',
+        className
+      )}
+    >
+      {children}
+    </div>
+  )
 }
 
 export function ParallaxSection({

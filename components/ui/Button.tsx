@@ -14,7 +14,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          'inline-flex items-center justify-center font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-[1.015] hover:shadow-lg',
+          'inline-flex items-center justify-center font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 md:hover:scale-[1.015] md:hover:shadow-lg hover-effect-item',
           // All buttons are orange, invert on hover
           variant === 'primary' && 'bg-primary text-white border-2 border-primary hover:bg-white hover:text-primary active:bg-cream active:scale-100',
           variant === 'outline' && 'bg-transparent text-primary border-2 border-primary hover:bg-primary hover:text-white active:bg-primary-hover active:scale-100',

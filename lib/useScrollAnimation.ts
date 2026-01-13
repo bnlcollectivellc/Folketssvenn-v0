@@ -36,6 +36,33 @@ export function useScrollAnimation<T extends HTMLElement>(
   return { ref, isVisible }
 }
 
+export function useScrollCenter<T extends HTMLElement>() {
+  const ref = useRef<T>(null)
+  const [isCentered, setIsCentered] = useState(false)
+
+  useEffect(() => {
+    const element = ref.current
+    if (!element) return
+
+    const checkCenter = () => {
+      const rect = element.getBoundingClientRect()
+      const elementCenter = rect.top + rect.height / 2
+      const viewportCenter = window.innerHeight / 2
+      const threshold = window.innerHeight * 0.2 // 20% threshold from center
+
+      const isNearCenter = Math.abs(elementCenter - viewportCenter) < threshold
+      setIsCentered(isNearCenter)
+    }
+
+    window.addEventListener('scroll', checkCenter, { passive: true })
+    checkCenter()
+
+    return () => window.removeEventListener('scroll', checkCenter)
+  }, [])
+
+  return { ref, isCentered }
+}
+
 export function useParallax() {
   const ref = useRef<HTMLDivElement>(null)
 

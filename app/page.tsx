@@ -28,6 +28,35 @@ export default function Home() {
     }
   }, [])
 
+  // Mobile scroll-center effect for hover items
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    if (!isMobile) return
+
+    const handleScroll = () => {
+      const items = document.querySelectorAll('.hover-effect-item')
+      const viewportCenter = window.innerHeight / 2
+      const threshold = window.innerHeight * 0.25
+
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect()
+        const elementCenter = rect.top + rect.height / 2
+        const isNearCenter = Math.abs(elementCenter - viewportCenter) < threshold
+
+        if (isNearCenter) {
+          item.classList.add('mobile-centered')
+        } else {
+          item.classList.remove('mobile-centered')
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const t = getTranslations(locale)
 
   const toggleLocale = () => {

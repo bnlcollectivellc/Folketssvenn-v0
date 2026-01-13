@@ -29,7 +29,7 @@ export function Future({ translations: t }: FutureProps) {
           {/* Visual element - timeline/cards */}
           <div className="space-y-6">
             <ScrollAnimate direction="right">
-              <div className="p-6 bg-secondary-muted rounded-xl border-l-4 border-secondary transition-all duration-200 hover:scale-[1.02] hover:shadow-lg cursor-default">
+              <div className="p-6 bg-secondary-muted rounded-xl border-l-4 border-secondary transition-all duration-200 md:hover:scale-[1.02] md:hover:shadow-lg cursor-default hover-effect-item">
                 <div className="text-small font-semibold text-secondary-hover uppercase tracking-wide mb-2">
                   Mars 2026
                 </div>
@@ -39,7 +39,7 @@ export function Future({ translations: t }: FutureProps) {
               </div>
             </ScrollAnimate>
             <ScrollAnimate direction="right" delay={100}>
-              <div className="p-6 bg-accent-muted rounded-xl border-l-4 border-accent transition-all duration-200 hover:scale-[1.02] hover:shadow-lg cursor-default">
+              <div className="p-6 bg-accent-muted rounded-xl border-l-4 border-accent transition-all duration-200 md:hover:scale-[1.02] md:hover:shadow-lg cursor-default hover-effect-item">
                 <div className="text-small font-semibold text-accent-hover uppercase tracking-wide mb-2">
                   Örebro
                 </div>
@@ -49,7 +49,7 @@ export function Future({ translations: t }: FutureProps) {
               </div>
             </ScrollAnimate>
             <ScrollAnimate direction="right" delay={200}>
-              <div className="p-6 bg-primary-muted rounded-xl border-l-4 border-primary transition-all duration-200 hover:scale-[1.02] hover:shadow-lg cursor-default">
+              <div className="p-6 bg-primary-muted rounded-xl border-l-4 border-primary transition-all duration-200 md:hover:scale-[1.02] md:hover:shadow-lg cursor-default hover-effect-item">
                 <div className="text-small font-semibold text-primary-hover uppercase tracking-wide mb-2">
                   Snart
                 </div>

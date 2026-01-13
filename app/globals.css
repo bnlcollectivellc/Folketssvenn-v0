@@ -239,3 +239,18 @@ html:focus-within {
   position: relative;
   z-index: 1;
 }
+
+/* Hover effects - desktop uses hover, mobile uses scroll-center */
+@media (min-width: 768px) {
+  .hover-effect-item:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 15px rgba(44, 44, 44, 0.1), 0 4px 6px rgba(44, 44, 44, 0.05);
+  }
+}
+
+@media (max-width: 767px) {
+  .hover-effect-item.mobile-centered {
+    transform: scale(1.015);
+    box-shadow: 0 10px 15px rgba(44, 44, 44, 0.1), 0 4px 6px rgba(44, 44, 44, 0.05);
+  }
+}

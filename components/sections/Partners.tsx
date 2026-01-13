@@ -44,10 +44,10 @@ export function Partners({ translations: t }: PartnersProps) {
           {doubledLogos.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 px-8 md:px-12 shrink-0 transition-all duration-200 hover:scale-[1.025]"
+              className="flex items-center gap-4 px-8 md:px-12 shrink-0 transition-all duration-200 md:hover:scale-[1.025]"
             >
               <div
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-lg md:text-xl font-bold text-white shrink-0 transition-all duration-200 hover:shadow-lg"
+                className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-lg md:text-xl font-bold text-white shrink-0 transition-all duration-200 md:hover:shadow-lg"
                 style={{ backgroundColor: partner.color }}
               >
                 {partner.symbol}
