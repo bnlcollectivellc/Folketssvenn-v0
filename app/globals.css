@@ -206,7 +206,7 @@ html:focus-within {
 
 .marquee-track {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 16s linear infinite;
 }
 
 .marquee-track:hover {

@@ -23,7 +23,7 @@ export function Impact({ translations: t }: ImpactProps) {
     >
       <div className="max-w-wide mx-auto px-6 md:px-12">
         {/* Stats Strip */}
-        <div className="grid grid-cols-3 gap-2 md:gap-8 mb-16 md:mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
           {stats.map((stat, index) => (
             <ScrollAnimate key={index} delay={index * 100}>
               <div className="text-center p-3 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm">
