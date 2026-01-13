@@ -23,10 +23,10 @@ export function Impact({ translations: t }: ImpactProps) {
     >
       <div className="max-w-wide mx-auto px-6 md:px-12">
         {/* Stats Strip */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
+        <div className="flex flex-col md:flex-row items-center md:grid md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
           {stats.map((stat, index) => (
             <ScrollAnimate key={index} delay={index * 100}>
-              <div className="text-center p-3 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm">
+              <div className="text-center px-8 py-4 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm w-fit md:w-full">
                 <div className="text-h2 md:text-[4.5rem] font-heading text-primary leading-none">
                   {stat.value}
                 </div>
