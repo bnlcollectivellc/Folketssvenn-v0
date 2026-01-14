@@ -211,7 +211,7 @@ html:focus-within {
 
 @media (max-width: 768px) {
   .marquee-track {
-    animation: marquee 13s linear infinite;
+    animation: marquee 10s linear infinite;
   }
 }
 

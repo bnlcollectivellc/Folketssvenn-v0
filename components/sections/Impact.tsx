@@ -21,9 +21,9 @@ export function Impact({ translations: t }: ImpactProps) {
       overlayColor="rgba(247, 243, 237, 0.92)"
       className="py-section-md md:py-section-lg"
     >
-      <div className="max-w-wide mx-auto px-6 md:px-12">
+      <div className="max-w-wide mx-auto px-6 md:px-12 pt-0 md:pt-0">
         {/* Stats Strip */}
-        <div className="flex flex-col md:flex-row items-center md:grid md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20">
+        <div className="flex flex-col md:flex-row items-center md:grid md:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-20 -mt-6 md:mt-0">
           {stats.map((stat, index) => (
             <ScrollAnimate key={index} delay={index * 100}>
               <div className="text-center px-8 py-4 md:p-8 bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm w-fit md:w-full transition-all duration-200 md:hover:scale-[1.015] md:hover:shadow-lg hover-effect-item">
