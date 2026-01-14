@@ -19,7 +19,7 @@ export function Origin({ translations: t }: OriginProps) {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl transition-all duration-200 md:hover:scale-[1.015] md:hover:shadow-2xl hover-effect-item">
               <Image
                 src="/images/origin.jpg"
-                alt="The beginning of Folketssvenn"
+                alt="The beginning of Folkets Matsvinn"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

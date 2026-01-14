@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       }
 
       await resend.emails.send({
-        from: 'Folketssvenn <onboarding@resend.dev>',
+        from: 'Folkets Matsvinn <onboarding@resend.dev>',
         to: ['contact@folketssvenn.com'], // Update with actual email
         subject: `Ny kontakt från ${name} - ${categoryLabels[category] || category}`,
         html: `

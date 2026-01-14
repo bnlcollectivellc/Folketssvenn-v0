@@ -12,7 +12,7 @@ export const translations = {
     },
     // Hero
     hero: {
-      headline: 'Folketssvenn',
+      headline: 'Folkets Matsvinn',
       tagline: 'Från överflöd till omtanke',
       cta1: 'Stöd vårt arbete',
       cta2: 'Hämta mat hos oss',
@@ -97,7 +97,7 @@ Jag föredrar att ge till organisationer bara, då de kan ta stora volymer. Jag 
     },
     // Footer
     footer: {
-      copyright: '© 2026 Folketssvenn. Alla rättigheter förbehållna.',
+      copyright: '© 2026 Folkets Matsvinn. Alla rättigheter förbehållna.',
       phone: 'Telefon',
     },
   },
@@ -108,7 +108,7 @@ Jag föredrar att ge till organisationer bara, då de kan ta stora volymer. Jag 
     },
     // Hero
     hero: {
-      headline: 'Folketssvenn',
+      headline: 'Folkets Matsvinn',
       tagline: 'From surplus to care',
       cta1: 'Support Our Work',
       cta2: 'Pick Up Food From Us',
@@ -193,7 +193,7 @@ I prefer giving to organizations only, as they can handle large volumes. I don't
     },
     // Footer
     footer: {
-      copyright: '© 2026 Folketssvenn. All rights reserved.',
+      copyright: '© 2026 Folkets Matsvinn. All rights reserved.',
       phone: 'Phone',
     },
   },

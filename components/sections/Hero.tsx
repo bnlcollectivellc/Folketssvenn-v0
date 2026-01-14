@@ -24,7 +24,7 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
 
       {/* Navigation - fades in last */}
       <nav className="relative z-10 flex justify-between items-center px-6 md:px-12 py-6 animate-hero-nav">
-        <div className="text-cream font-heading text-h4">Folketssvenn</div>
+        <div className="text-cream font-heading text-h4">Folkets Matsvinn</div>
         <LanguageToggle
           locale={locale}
           onToggle={onToggleLocale}

@@ -15,7 +15,7 @@ export function Footer({ translations: t }: FooterProps) {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Logo / Brand */}
             <div className="text-h4 font-heading text-charcoal">
-              Folketssvenn
+              Folkets Matsvinn
             </div>
 
             {/* Contact */}
