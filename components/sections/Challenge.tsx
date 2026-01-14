@@ -11,7 +11,7 @@ export function Challenge({ translations: t }: ChallengeProps) {
   return (
     <ParallaxSection
       backgroundImage="/images/hero.jpg"
-      overlayColor="rgba(245, 196, 179, 0.9)"
+      overlayColor="rgba(240, 221, 208, 0.92)"
       className="pt-section-md md:pt-section-lg pb-section-md md:pb-section-lg"
     >
       <div className="max-w-narrow mx-auto px-6 md:px-12 text-center">

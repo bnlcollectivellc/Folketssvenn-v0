@@ -39,7 +39,7 @@ export function Partners({ translations: t }: PartnersProps) {
       </section>
 
       {/* Full-width marquee banner - Section divider */}
-      <div className="relative bg-warm-dark py-6 md:py-8 overflow-hidden">
+      <div className="relative bg-terracotta py-6 md:py-8 overflow-hidden">
         <div className="marquee-track">
           {doubledLogos.map((partner, index) => (
             <div
@@ -47,12 +47,12 @@ export function Partners({ translations: t }: PartnersProps) {
               className="flex items-center gap-4 px-8 md:px-12 shrink-0 transition-all duration-200 md:hover:scale-[1.025]"
             >
               <div
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-lg md:text-xl font-bold text-white shrink-0 transition-all duration-200 md:hover:shadow-lg"
+                className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-lg md:text-xl font-bold text-white shrink-0 transition-all duration-200 md:hover:shadow-lg border-2 border-white/30"
                 style={{ backgroundColor: partner.color }}
               >
                 {partner.symbol}
               </div>
-              <span className="text-body font-medium text-cream whitespace-nowrap">
+              <span className="text-body font-medium text-white whitespace-nowrap">
                 {partner.name}
               </span>
             </div>

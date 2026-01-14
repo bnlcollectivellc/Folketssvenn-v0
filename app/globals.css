@@ -244,14 +244,14 @@ html:focus-within {
 @media (min-width: 768px) {
   .hover-effect-item:hover {
     transform: scale(1.015);
-    box-shadow: 0 10px 15px rgba(44, 44, 44, 0.1), 0 4px 6px rgba(44, 44, 44, 0.05);
+    box-shadow: 0 10px 15px rgba(92, 64, 51, 0.12), 0 4px 6px rgba(92, 64, 51, 0.08);
   }
 }
 
 @media (max-width: 767px) {
   .hover-effect-item.mobile-centered {
     transform: scale(1.015);
-    box-shadow: 0 10px 15px rgba(44, 44, 44, 0.1), 0 4px 6px rgba(44, 44, 44, 0.05);
+    box-shadow: 0 10px 15px rgba(92, 64, 51, 0.12), 0 4px 6px rgba(92, 64, 51, 0.08);
   }
 
   /* Phone links turn white when centered on mobile */

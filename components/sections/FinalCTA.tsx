@@ -16,7 +16,7 @@ interface FinalCTAProps {
 
 export function FinalCTA({ translations: t, onCtaClick, ctaLabels }: FinalCTAProps) {
   return (
-    <section className="pt-12 md:pt-16 pb-section-md md:pb-section-lg bg-warm-dark text-cream">
+    <section className="pt-12 md:pt-16 pb-section-md md:pb-section-lg bg-sand text-warm-brown">
       <div className="max-w-wide mx-auto px-6 md:px-12 text-center">
         <ScrollAnimate>
           <h2 className="text-h2 md:text-h1 font-heading mb-6">
@@ -25,7 +25,7 @@ export function FinalCTA({ translations: t, onCtaClick, ctaLabels }: FinalCTAPro
         </ScrollAnimate>
 
         <ScrollAnimate delay={100}>
-          <p className="text-body-lg text-cream/80 max-w-narrow mx-auto mb-8 whitespace-pre-line">
+          <p className="text-body-lg text-warm-brown-light max-w-narrow mx-auto mb-8 whitespace-pre-line">
             {t.content}
           </p>
         </ScrollAnimate>
@@ -34,7 +34,7 @@ export function FinalCTA({ translations: t, onCtaClick, ctaLabels }: FinalCTAPro
         <ScrollAnimate delay={200}>
           <a
             href={`tel:${t.phone}`}
-            className="w-[52px] h-[52px] rounded-full bg-primary text-white border-2 border-primary flex items-center justify-center transition-all duration-200 md:hover:bg-white md:hover:text-primary md:hover:scale-[1.015] md:hover:shadow-lg hover-effect-item mx-auto mb-12"
+            className="w-[52px] h-[52px] rounded-full bg-primary text-white border-2 border-primary flex items-center justify-center transition-all duration-200 md:hover:bg-sand-dark md:hover:text-primary md:hover:scale-[1.015] md:hover:shadow-lg hover-effect-item mx-auto mb-12"
           >
             <svg
               className="w-6 h-6"

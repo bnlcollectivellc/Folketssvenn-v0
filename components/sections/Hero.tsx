@@ -18,7 +18,7 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
       <div
         className="absolute inset-0 bg-cover bg-center animate-hero-bg"
         style={{
-          backgroundImage: `linear-gradient(rgba(61, 46, 36, 0.6), rgba(61, 46, 36, 0.6)), url('/images/hero.jpg')`,
+          backgroundImage: `linear-gradient(rgba(92, 64, 51, 0.55), rgba(92, 64, 51, 0.55)), url('/images/hero.jpg')`,
         }}
       />
 

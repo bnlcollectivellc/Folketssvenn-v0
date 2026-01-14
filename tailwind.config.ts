@@ -12,14 +12,15 @@ const config: Config = {
         // Brand Colors
         primary: {
           DEFAULT: '#E07B54',
-          hover: '#C96A45',
-          active: '#B85D3A',
+          hover: '#D16A43',
+          active: '#C25A35',
           muted: '#F5C4B3',
+          light: '#F2A488',
         },
         secondary: {
           DEFAULT: '#D4A853',
-          hover: '#C19643',
-          active: '#A98235',
+          hover: '#C49742',
+          active: '#B48632',
           muted: '#F5E6C4',
         },
         accent: {
@@ -30,8 +31,22 @@ const config: Config = {
         },
         // Background
         cream: {
-          DEFAULT: '#FFFBF5',
-          muted: '#F7F3ED',
+          DEFAULT: '#FFF9F5',
+          muted: '#F5EDE5',
+          warm: '#FFF5ED',
+        },
+        // Warm Beige (for accent sections - closer to orange)
+        sand: {
+          DEFAULT: '#E8D5C4',
+          light: '#F2E6DA',
+          dark: '#D9C4AE',
+          deep: '#C9A98A',
+        },
+        // Terracotta tones (for bold sections)
+        terracotta: {
+          DEFAULT: '#D4A088',
+          light: '#E8C4B0',
+          muted: '#F0DDD0',
         },
         // Text
         charcoal: {
@@ -39,16 +54,17 @@ const config: Config = {
           secondary: '#5A5A5A',
           muted: '#8A8A8A',
         },
-        // Warm Dark (for dark sections)
-        'warm-dark': {
-          DEFAULT: '#3D2E24',
-          light: '#4A3728',
-          deep: '#2D211A',
+        // Warm brown text (for light backgrounds)
+        'warm-brown': {
+          DEFAULT: '#5C4033',
+          light: '#7A5A48',
+          dark: '#3D2A1F',
         },
         // Borders
         border: {
-          DEFAULT: '#E5E0D8',
-          strong: '#D4CFC5',
+          DEFAULT: '#E5DDD4',
+          strong: '#D4C8BC',
+          warm: '#E0C8B5',
         },
         // Semantic
         success: '#7B9E87',
