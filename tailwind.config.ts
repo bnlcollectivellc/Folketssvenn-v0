@@ -39,6 +39,12 @@ const config: Config = {
           secondary: '#5A5A5A',
           muted: '#8A8A8A',
         },
+        // Warm Dark (for dark sections)
+        'warm-dark': {
+          DEFAULT: '#3D2E24',
+          light: '#4A3728',
+          deep: '#2D211A',
+        },
         // Borders
         border: {
           DEFAULT: '#E5E0D8',

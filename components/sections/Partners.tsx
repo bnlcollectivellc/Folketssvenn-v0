@@ -39,7 +39,7 @@ export function Partners({ translations: t }: PartnersProps) {
       </section>
 
       {/* Full-width marquee banner - Section divider */}
-      <div className="relative bg-charcoal py-6 md:py-8 overflow-hidden">
+      <div className="relative bg-warm-dark py-6 md:py-8 overflow-hidden">
         <div className="marquee-track">
           {doubledLogos.map((partner, index) => (
             <div
