@@ -45,7 +45,7 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
         </p>
 
         {/* CTA Buttons - fade in after tagline */}
-        <div className="flex flex-col sm:flex-row gap-4 animate-hero-buttons">
+        <div className="flex flex-col sm:flex-row gap-4 animate-hero-buttons items-center">
           <Button
             onClick={() => onCtaClick('donor')}
             size="lg"
@@ -64,15 +64,26 @@ export function Hero({ translations: t, locale, onToggleLocale, onCtaClick }: He
           >
             {t.hero.cta3}
           </Button>
+          {/* Phone button */}
+          <a
+            href="tel:0737762818"
+            className="w-[52px] h-[52px] rounded-full bg-primary text-white border-2 border-primary flex items-center justify-center transition-all duration-200 md:hover:bg-white md:hover:text-primary md:hover:scale-[1.015] md:hover:shadow-lg hover-effect-item"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+          </a>
         </div>
-
-        {/* Phone number */}
-        <a
-          href="tel:0737762818"
-          className="mt-6 text-body-lg text-primary md:hover:text-white md:hover:scale-[1.015] hover-effect-item transition-all duration-200 animate-hero-buttons"
-        >
-          0737762818
-        </a>
       </div>
 
       {/* Scroll indicator */}
