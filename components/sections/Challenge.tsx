@@ -1,7 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import { Translations } from '@/lib/i18n'
-import { ScrollAnimate, ParallaxSection } from '@/components/ui/ScrollAnimate'
+import { ScrollAnimate } from '@/components/ui/ScrollAnimate'
 
 interface ChallengeProps {
   translations: Translations['sections']['challenge']
@@ -9,31 +10,38 @@ interface ChallengeProps {
 
 export function Challenge({ translations: t }: ChallengeProps) {
   return (
-    <ParallaxSection
-      backgroundImage="/images/hero.jpg"
-      overlayColor="rgba(240, 221, 208, 0.92)"
-      className="pt-section-md md:pt-section-lg pb-section-md md:pb-section-lg"
-    >
-      <div className="max-w-narrow mx-auto px-6 md:px-12 text-center">
-        <ScrollAnimate>
-          <h2 className="text-h2 md:text-h1 font-heading text-charcoal mb-8">
-            {t.title}
-          </h2>
-        </ScrollAnimate>
+    <section className="py-section-md md:py-section-lg bg-sand-light">
+      <div className="max-w-wide mx-auto px-6 md:px-12">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+          {/* Image */}
+          <ScrollAnimate direction="left">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl transition-all duration-200 md:hover:scale-[1.015] md:hover:shadow-2xl hover-effect-item">
+              <Image
+                src="/images/challenge.jpg"
+                alt="Why we need your help"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </ScrollAnimate>
 
-        <ScrollAnimate delay={100}>
-          <div className="text-body-lg text-charcoal/90 whitespace-pre-line leading-relaxed text-left">
-            {t.content}
-          </div>
-        </ScrollAnimate>
+          {/* Content */}
+          <div>
+            <ScrollAnimate>
+              <h2 className="text-h2 md:text-h1 font-heading text-charcoal mb-6">
+                {t.title}
+              </h2>
+            </ScrollAnimate>
 
-        {/* Visual accent */}
-        <ScrollAnimate delay={200}>
-          <div className="mt-12 flex justify-center">
-            <div className="w-24 h-1 bg-primary rounded-full" />
+            <ScrollAnimate delay={100}>
+              <div className="text-body-lg text-charcoal-secondary whitespace-pre-line leading-relaxed">
+                {t.content}
+              </div>
+            </ScrollAnimate>
           </div>
-        </ScrollAnimate>
+        </div>
       </div>
-    </ParallaxSection>
+    </section>
   )
 }

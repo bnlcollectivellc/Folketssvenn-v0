@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Translations } from '@/lib/i18n'
 import { ScrollAnimate } from '@/components/ui/ScrollAnimate'
 
@@ -8,11 +9,10 @@ interface PartnersProps {
 }
 
 const partnerLogos = [
-  { name: 'Röda Korset', symbol: '+', color: '#C95454' },
-  { name: 'Matmissionen', symbol: 'M', color: '#7B9E87' },
-  { name: 'Vid Din Sida', symbol: 'V', color: '#5A8AC9' },
-  { name: 'OLIO', symbol: 'O', color: '#D4A853' },
-  { name: 'Costco', symbol: 'C', color: '#E07B54' },
+  { name: 'Röda Korset', logo: '/images/logos/Swedish_Red_Cross_logo.svg.png' },
+  { name: 'Matmissionen', logo: '/images/logos/Matmissionen_rund_rgb-1024x1024.png' },
+  { name: 'OLIO', logo: '/images/logos/Olio_circle_logo-1.jpg' },
+  { name: 'Costco', logo: '/images/logos/Costco-Logo.wine.svg' },
 ]
 
 export function Partners({ translations: t }: PartnersProps) {
@@ -46,11 +46,14 @@ export function Partners({ translations: t }: PartnersProps) {
               key={index}
               className="flex items-center gap-4 px-8 md:px-12 shrink-0 transition-all duration-200 md:hover:scale-[1.025]"
             >
-              <div
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-lg md:text-xl font-bold text-white shrink-0 transition-all duration-200 md:hover:shadow-lg border-2 border-white/30"
-                style={{ backgroundColor: partner.color }}
-              >
-                {partner.symbol}
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden bg-white shrink-0 transition-all duration-200 md:hover:shadow-lg border-2 border-white/30 flex items-center justify-center">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={48}
+                  height={48}
+                  className="object-contain w-full h-full p-1"
+                />
               </div>
               <span className="text-body font-medium text-white whitespace-nowrap">
                 {partner.name}
