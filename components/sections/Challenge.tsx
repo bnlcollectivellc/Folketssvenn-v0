@@ -29,7 +29,7 @@ export function Challenge({ translations: t }: ChallengeProps) {
           {/* Content */}
           <div>
             <ScrollAnimate>
-              <h2 className="text-h2 md:text-h1 font-heading text-charcoal mb-6">
+              <h2 className="text-h2 md:text-h1 font-heading text-charcoal mb-6 whitespace-pre-line">
                 {t.title}
               </h2>
             </ScrollAnimate>

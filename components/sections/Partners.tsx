@@ -9,8 +9,9 @@ interface PartnersProps {
 }
 
 const partnerLogos = [
-  { name: 'Röda Korset', logo: '/images/logos/Swedish_Red_Cross_logo.svg.png' },
+  { name: 'Röda Korset', logo: '/images/logos/Flag_of_the_Red_Cross.svg.png' },
   { name: 'Matmissionen', logo: '/images/logos/Matmissionen_rund_rgb-1024x1024.png' },
+  { name: 'Vid Din Sida', logo: '/images/logos/logoviddinsida.png' },
   { name: 'OLIO', logo: '/images/logos/Olio_circle_logo-1.jpg' },
   { name: 'Costco', logo: '/images/logos/Costco-Logo.wine.svg' },
 ]

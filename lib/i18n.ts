@@ -48,7 +48,7 @@ Jag får även matsvinn från Costco i Arninge som vi (min bror hjälper mig med
 Idag har jag kontakt med drygt 20 organisationer som hämtar mat hos mig. Men jag behöver fler att ge till. Det finns alldeles för mycket mat att rädda och organisationerna har oftast bara små personbilar.`,
       },
       challenge: {
-        title: 'Varför vi behöver din hjälp',
+        title: 'Varför vi behöver\ndin hjälp',
         content: `Jag brinner för att hjälpa andra och jag vet att jag gör ett bra arbete för utsatta/behövande. Jag har varken instagram eller Facebook till min hobby. Allt sker via whatsapp mellan mig och organisationen. Så jag syns inte i sociala media (än).
 
 Mitt arbete syns mycket bakom kulisserna och folk är enorm tacksamma. Jag har t.o.m fått erbjudande om att få en gala där all insamling går till mitt arbete. Tyvärr krävde de att jag måste göra matkassar till behövande mammor en gång i veckan. Detta har jag tyvärr inte tid för. Att packa i kassar. Jag samlar ihop pallvis med räddad mat, ställer fram, och alla tar vad dem vill. Ju mer de tar ju gladare blir jag.
@@ -144,7 +144,7 @@ I also receive food waste from Costco in Arninge, which my brother helps me with
 Today I'm in contact with over 20 organizations who pick up food from me. But I need more to give to. There's far too much food to rescue and the organizations usually only have small cars.`,
       },
       challenge: {
-        title: 'Why We Need Your Help',
+        title: 'Why We Need\nYour Help',
         content: `I'm passionate about helping others and I know I'm doing good work for vulnerable/needy people. I don't have Instagram or Facebook for this hobby. Everything happens via WhatsApp between me and the organizations. So I'm not visible on social media (yet).
 
 My work happens mostly behind the scenes and people are enormously grateful. I've even been offered to have a gala where all proceeds go to my work. Unfortunately, they required me to make food bags for needy mothers once a week. I don't have time for that. Packing bags. I collect pallets of rescued food, set them out, and everyone takes what they want. The more they take, the happier I am.
